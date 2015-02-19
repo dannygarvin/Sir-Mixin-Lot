@@ -1,0 +1,16 @@
+@mixin bg-img($path,$position:center,$repeat:no-repeat){
+	background-image: url($path);
+	background-position: $position;
+	background-repeat: $repeat;
+	
+}
+
+// Full Page Background Image
+
+@mixin full-screen-bg-img($url,$position:fixed){
+	background: url($url) no-repeat center center $position; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}

@@ -1,0 +1,19 @@
+@mixin video-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  iframe{
+      left:0;
+      top:0;
+      width: 100%;
+      height: 100%;
+      position:absolute;
+      border:none;
+  }
+}
+
+
+.video-responsive{
+  @include video-responsive;
+}

@@ -1,0 +1,7 @@
+@mixin position-top($position: absolute, $width: 100%){
+	position: $position;
+	width: $width;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
